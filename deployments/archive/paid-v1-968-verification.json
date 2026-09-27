@@ -1,0 +1,14 @@
+{
+  "unpaidStartRejected": true,
+  "gameFeeWei": "100000000000000000",
+  "feeRecipient": "0xa577C97a16054379F10723fCCa4E612f937AE86e",
+  "chainId": 968,
+  "address": "0xe7Ba4998E470B1D9A3CdB71C7a718133Fb04C976",
+  "transactionHash": "0xb636f87f3877a55379c370899b3334d2b24ada9e2f4c08d39d992dc3b90374cb",
+  "blockNumber": 24736186,
+  "gasUsed": "953647",
+  "feeWei": "19072940000000000",
+  "runtimeCodeHash": "0xce9e5d71c45b3225e9706543c0bc761403d99e73976d19bcdcafeb7230a516c2",
+  "startGameSimulation": "passed",
+  "verifiedAt": "2026-09-26T08:34:22.343Z"
+}

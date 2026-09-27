@@ -1,14 +1,13 @@
-# Compiler files
-cache/
-out/
-
-# Ignores development broadcast logs
-!/broadcast
-/broadcast/*/31337/
-/broadcast/**/dry-run/
-
-# Docs
-docs/
-
-# Dotenv file
+node_modules/
+dist/
+artifacts/
 .env
+.env.*
+!.env.example
+*.tsbuildinfo
+contracts/out/
+contracts/cache/
+contracts/broadcast/
+.DS_Store
+
+contracts/lib/

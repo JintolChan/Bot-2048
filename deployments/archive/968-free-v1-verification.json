@@ -1,0 +1,11 @@
+{
+  "chainId": 968,
+  "address": "0x59A72E2AfeDbFD04ae2156d0a4F0Beb7779c0375",
+  "transactionHash": "0x76ea3c60b6ad725703f75170699abeffc4080ef1cbbc56874a0a782e59d0542c",
+  "blockNumber": 24731374,
+  "gasUsed": "852315",
+  "feeWei": "17046300000000000",
+  "runtimeCodeHash": "0x307ea4922ba58c2e434913e3efddecde5f1de7ec01122d0f85be367fdbb216e6",
+  "startGameSimulation": "passed",
+  "verifiedAt": "2026-09-26T07:34:14.632Z"
+}
