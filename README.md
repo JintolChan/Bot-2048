@@ -36,15 +36,17 @@ npm run preview          # 预览 dist/
 
 ```dotenv
 VITE_BOT_NETWORK=mainnet
-VITE_BOT_MAINNET_CONTRACT=
-VITE_BOT_TESTNET_CONTRACT=
+VITE_BOT_MAINNET_CONTRACT=0x59A72E2AfeDbFD04ae2156d0a4F0Beb7779c0375
+VITE_BOT_TESTNET_CONTRACT=0xF10B7e5cc6beFC2C6ddF23946bF34283bC4eA5f6
 ```
 
 可在界面切换主网/测试网。连接钱包时添加或切换对应网络，发送交易前再次检查钱包账户、链 ID 与地址是否存在合约代码。支持注入 `window.ethereum` 的 EVM 钱包（如 MetaMask / BO Wallet 的 DApp 浏览器）。没有钱包时会给出明确提示。
 
 ## 部署合约
 
-当前项目已部署到 BOT Chain 测试网（968），合约地址：`0xF10B7e5cc6beFC2C6ddF23946bF34283bC4eA5f6`。部署记录位于 `deployments/968.json`。如需重新部署或部署主网，需要自己的部署账户及对应网络上的 BOT Gas。测试网代币入口：[BOT Faucet](https://faucet.botchain.ai)。
+项目已于 2026-10-06 部署到 BOT Chain 主网（677），主网合约：`0x59A72E2AfeDbFD04ae2156d0a4F0Beb7779c0375`。前端默认使用主网。部署记录和链上核验结果分别见 `deployments/677.json` 与 `deployments/677-verification.json`。
+
+测试网部署仍保留在 BOT Chain 测试网（968），合约地址：`0xF10B7e5cc6beFC2C6ddF23946bF34283bC4eA5f6`。部署记录位于 `deployments/968.json`。如需重新部署或部署主网，需要自己的部署账户及对应网络上的 BOT Gas。测试网代币入口：[BOT Faucet](https://faucet.botchain.ai)。
 
 1. 在本机终端安全设置 `DEPLOYER_PRIVATE_KEY` 环境变量；不要将私钥写入 `VITE_` 变量，也不需要发送给任何人。
 2. 先部署测试网：
@@ -61,6 +63,8 @@ BOT_NETWORK=mainnet npm run deploy
 ```
 
 将主网地址填入 `VITE_BOT_MAINNET_CONTRACT`。该命令会实际广播并消耗 BOT Gas。脚本检查 RPC 链 ID，编译并部署 `Bot2048`，保存合约地址与交易哈希到 `deployments/<chainId>.json`。每局创建时固定收取 0.1 原生 BOT（另加网络 Gas），合约原子转入 `0xa577C97a16054379F10723fCCa4E612f937AE86e`。费用与收款地址为合约常量，没有修改入口。转账失败则整个开局回退；后续移动不收开局费。
+
+只读核验主网部署：`BOT_NETWORK=mainnet node --import tsx scripts/verify-deployment.ts`。检查部署回执、运行代码、收费参数、付费开局模拟及未付款拒绝，不发送游戏交易。
 
 构建前端：`npm run build`，发布 `dist/` 到支持 HTTPS 的静态托管。`VITE_` 配置在构建时注入，修改后需要重新构建。
 
