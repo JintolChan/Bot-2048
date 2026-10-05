@@ -32,15 +32,8 @@ npm run preview          # 预览 dist/
 
 来源：[BOT Chain 官方 Quick Guide](https://dev-docs.botchain.ai/docs/Developers/quick-guide/)。2026-09-24 实际请求两个 RPC 的 `eth_chainId`，分别返回 `0x2a5`、`0x3c8`。
 
-前端配置（均为公开信息）：
 
-```dotenv
-VITE_BOT_NETWORK=mainnet
-VITE_BOT_MAINNET_CONTRACT=0x59A72E2AfeDbFD04ae2156d0a4F0Beb7779c0375
-VITE_BOT_TESTNET_CONTRACT=0xF10B7e5cc6beFC2C6ddF23946bF34283bC4eA5f6
-```
 
-可在界面切换主网/测试网。连接钱包时添加或切换对应网络，发送交易前再次检查钱包账户、链 ID 与地址是否存在合约代码。支持注入 `window.ethereum` 的 EVM 钱包（如 MetaMask / BO Wallet 的 DApp 浏览器）。没有钱包时会给出明确提示。
 
 ## 部署合约
 
