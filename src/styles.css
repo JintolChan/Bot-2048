@@ -1589,3 +1589,38 @@ footer > div > span {
     font-size: 28px;
   }
 }
+
+/* Original overlapping-tile logo, edited to read only 2048. */
+.brand-logo {
+  width: 184px;
+  height: auto;
+  aspect-ratio: 1665 / 450;
+  overflow: hidden;
+  text-shadow: none;
+}
+.site-header .brand-logo {
+  width: 184px;
+}
+.game-logo-title .brand-logo {
+  width: 100%;
+  max-width: 310px;
+}
+.brand-logo-small {
+  width: 132px;
+}
+@media (max-width: 1100px) {
+  .site-header .brand-logo {
+    width: 158px;
+  }
+}
+@media (max-width: 600px) {
+  .site-header .brand-logo {
+    width: 142px;
+  }
+  .game-logo-title .brand-logo {
+    max-width: 180px;
+  }
+  .brand-logo-small {
+    width: 112px;
+  }
+}

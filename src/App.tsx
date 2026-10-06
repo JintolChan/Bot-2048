@@ -45,12 +45,15 @@ const shorten = (value: string) => `${value.slice(0, 6)}…${value.slice(-4)}`;
 const arrowIcons = [ArrowUp, ArrowDown, ArrowLeft, ArrowRight];
 function Brand({ small = false }: { small?: boolean }) {
   return (
-    <span
+    <svg
       className={`brand-logo ${small ? "brand-logo-small" : ""}`}
+      viewBox="135 180 1665 450"
+      role="img"
       aria-label="2048"
+      focusable="false"
     >
-      2048
-    </span>
+      <image href="/brand/2048-logo-blue-v2.png" width="1916" height="821" />
+    </svg>
   );
 }
 

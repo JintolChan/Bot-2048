@@ -3,7 +3,7 @@
   "server": "13.158.71.147",
   "sshUser": "ec2-user",
   "webContainer": "botport-mainnet-web-1",
-  "release": "20261006T042706Z-blue",
+  "release": "20261006T073915Z-logo",
   "containerRoot": "/config/bot2048/current",
   "persistentConfig": "/config/bot2048/Caddyfile",
   "composePath": "/home/ec2-user/botport-mainnet/infra/ec2/compose.yaml",
@@ -14,5 +14,6 @@
   "status": "deployed; HTTPS verified HTTP 200",
   "existingSiteHttpStatus": 200,
   "brand": "2048",
-  "theme": "blue"
+  "theme": "blue",
+  "logo": "original overlapping tiles and 2048, blue, BOT removed"
 }
