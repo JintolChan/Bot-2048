@@ -3,7 +3,7 @@
   "server": "13.158.71.147",
   "sshUser": "ec2-user",
   "webContainer": "botport-mainnet-web-1",
-  "release": "20261006T073915Z-logo",
+  "release": "20261006T172207Z-favicon",
   "containerRoot": "/config/bot2048/current",
   "persistentConfig": "/config/bot2048/Caddyfile",
   "composePath": "/home/ec2-user/botport-mainnet/infra/ec2/compose.yaml",
@@ -15,5 +15,6 @@
   "existingSiteHttpStatus": 200,
   "brand": "2048",
   "theme": "blue",
-  "logo": "original overlapping tiles and 2048, blue, BOT removed"
+  "logo": "original overlapping tiles and 2048, blue, BOT removed",
+  "favicon": "/favicon-blue-v2.svg"
 }
