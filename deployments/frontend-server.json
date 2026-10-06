@@ -1,0 +1,18 @@
+{
+  "domain": "2048.onchainplay.shop",
+  "server": "13.158.71.147",
+  "sshUser": "ec2-user",
+  "webContainer": "botport-mainnet-web-1",
+  "release": "20261006T042706Z-blue",
+  "containerRoot": "/config/bot2048/current",
+  "persistentConfig": "/config/bot2048/Caddyfile",
+  "composePath": "/home/ec2-user/botport-mainnet/infra/ec2/compose.yaml",
+  "backupPath": "/home/ec2-user/bot2048-backups/20261005T174811Z",
+  "network": "mainnet",
+  "chainId": 677,
+  "contract": "0x59A72E2AfeDbFD04ae2156d0a4F0Beb7779c0375",
+  "status": "deployed; HTTPS verified HTTP 200",
+  "existingSiteHttpStatus": 200,
+  "brand": "2048",
+  "theme": "blue"
+}

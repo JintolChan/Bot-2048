@@ -45,19 +45,12 @@ const shorten = (value: string) => `${value.slice(0, 6)}…${value.slice(-4)}`;
 const arrowIcons = [ArrowUp, ArrowDown, ArrowLeft, ArrowRight];
 function Brand({ small = false }: { small?: boolean }) {
   return (
-    <svg
+    <span
       className={`brand-logo ${small ? "brand-logo-small" : ""}`}
-      viewBox="110 310 1580 280"
-      role="img"
-      aria-label="BOT 2048"
-      focusable="false"
+      aria-label="2048"
     >
-      <image
-        href="/brand/bot2048-logo-selected.png"
-        width="1774"
-        height="887"
-      />
-    </svg>
+      2048
+    </span>
   );
 }
 
@@ -182,7 +175,7 @@ export default function App() {
   return (
     <>
       <header className="site-header">
-        <a className="brand-link" href="#play" aria-label="BOT 2048 首页">
+        <a className="brand-link" href="#play" aria-label="2048 首页">
           <Brand />
         </a>
         <span className="header-divider" />
@@ -254,7 +247,7 @@ export default function App() {
           <div className="edition">
             <span>THE ONCHAIN CLASSIC</span>
             <strong>
-              2048<span> / BOT EDITION</span>
+              2048<span> / ONCHAIN</span>
             </strong>
           </div>
         </section>
